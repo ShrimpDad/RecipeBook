@@ -10,7 +10,8 @@ namespace RecipeBook
     {
         static void Main(string[] args)
         {
-            Recipe cookies = new Recipe("Cookies",$"Eat them",12,"cookies");
+
+            Recipe cookies = new RecipeBook.Recipe("Cookies", {"soft",2,"hard" }, "Eat them", 12, "cookies");
             Recipe pancakes = new Recipe("Pancakes", "Eat them", 12, "pancakes");
             Dictionary<int, Recipe> recipeBook = new Dictionary<int, Recipe>();
             recipeBook.Add(1, cookies);
