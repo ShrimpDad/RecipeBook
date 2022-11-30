@@ -6,21 +6,17 @@ using System.Threading.Tasks;
 
 namespace RecipeBook
 {
-    public class Recipe<Ingredient>
+    public class Recipe
     {
-        public string recipeName { get; set; }
-        public List<Ingredient> recipeIngredients = new List<Ingredient>();
-        public string recipeSteps { get; set; }
-        public int recipeMakes { get; set; }
-        public string recipeMakeUnits { get; set; }
+        public string Name { get; set; }
+        public double Makes { get; set; }
+        public string Unit { get; set; }
 
-        public Recipe(string recipeNameInput, List<Ingredient> recipeIngredientsInput, string recipeStepsInput, int recipeMakesInput, string recipeMakeUnitsInput)
+        public Recipe(string name, double makes, string unit)
         {
-            recipeName = recipeNameInput;
-            recipeIngredients = recipeIngredientsInput;
-            recipeSteps = recipeStepsInput;
-            recipeMakes = recipeMakesInput;
-            recipeMakeUnits = recipeMakeUnitsInput;
-        }
+            Name = name;
+            Makes = makes;
+            Unit = unit;
+                    }
     }
 }

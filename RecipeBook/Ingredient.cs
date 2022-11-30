@@ -6,17 +6,13 @@ using System.Threading.Tasks;
 
 namespace RecipeBook
 {
-    public class Ingredient
+    public class Ingredient 
     {
-        public string ingredientName { get; set; }
-        public double ingredientAmount { get; set; }
-        public string ingredientAmountUnit { get; set; }
+        public string Name { get; set; }
+        public double Amount { get; set; }
+        public string Unit { get; set; }
+        public double Held { get; set; }
+        public double PercentHeld { get; set; }
 
-        public Ingredient (string ingredientNameInput, double ingredientAmountInput, string ingredientAmountUnitInput)
-        {
-            ingredientName = ingredientNameInput;
-            ingredientAmount = ingredientAmountInput;
-            ingredientAmountUnit = ingredientAmountUnitInput;
-        }
     }
 }
