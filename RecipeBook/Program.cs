@@ -44,7 +44,7 @@ namespace RecipeBook
             Console.WriteLine($"\nThis will make {cookies.Makes} {cookies.Unit}");
 
             //Ask user if they have enough of each ingredient and store the response
-            Console.WriteLine("Do you have suffcient amounts of each ingredient? (Y/N)");
+            Console.WriteLine("Do you have sufficient amounts of each ingredient? (Y/N)");
             string response = Console.ReadLine().ToLower();
 
             //Handle response from user
