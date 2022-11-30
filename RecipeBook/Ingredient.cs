@@ -13,6 +13,5 @@ namespace RecipeBook
         public string Unit { get; set; }
         public double Held { get; set; }
         public double PercentHeld { get; set; }
-
     }
 }
